@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Element by ID</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#removeBtn").click(function () {
+            $("#" + $("#idInput").val().trim()).remove();
+            $("#idInput").val("");
+          });
+        });
+      </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin: 20px">
+      <label> Enter ID to Remove: <input type="text" id="idInput" /> </label>
+      <button id="removeBtn">Remove Element</button>
+    </div>
+
+    <div id="contentDiv"style="width: 50%;margin: 20px auto;padding: 10px; border: 1px solid #ddd;">
+      <p id="para1">This is paragraph 1.</p>
+      <p id="para2">This is paragraph 2.</p>
+      <p id="para3">This is paragraph 3.</p>
+      <p id="para4">This is paragraph 4.</p>
+    </div>
+    </body>
+</html>

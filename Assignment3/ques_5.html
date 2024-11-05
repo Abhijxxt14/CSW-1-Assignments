@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques_5</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <ul id="topicsList">
+        <li>Getting Started with Full Stack</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+<button id ="appndbtn"> click this to append</button>
+<button id ="prepndbtn"> click this to prepend</button>
+<button id = "aftrbtn"> click this to after</button>
+<button id = "bfrebtn"> click this to before</button>
+    <script>
+        $(document).ready(function() {
+            $("#appndbtn").click(function () {
+                $('#topicsList').append('<li>CSS</li>');
+               });
+               $("#prepndbtn").click(function () {
+                $('#topicsList').prepend('<li>Introduction to full stack</li>');
+               });
+               $("#aftrbtn").click(function () {
+                $('#topicsList').after('<li>topic updated</li>');
+               });
+               $("#bfrebtn").click(function () {
+                $('#topicsList').before('<li>List of Topics Covered</li>');
+               })
+             });
+    </script>
+
+</body>
+</html>

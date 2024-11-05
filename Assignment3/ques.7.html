@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques_7</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#addRowBtn').click(function() {
+                $('#studentTable tbody').append('<tr><td>' + $('#nameInput').val() + '</td><td>' + $('#ageInput').val() + '</td><td>' + $('#gradeInput').val() + '</td></tr>');
+                $('#nameInput').val('');
+                $('#ageInput').val('');
+                $('#gradeInput').val('');
+            });
+            $('#changeColorBtn').click(function() {
+            $('#studentTable tbody td').css('color', 'red');
+        });
+        });
+    </script>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin: 20px;">
+        <label>
+            Name: <input type="text" id="nameInput" required>
+        </label>
+        <label>
+            Age: <input type="number" id="ageInput" required>
+        </label>
+        <label>
+            Grade: <input type="text" id="gradeInput" required>
+        </label>
+        <button id="addRowBtn">Add Row</button>
+        <button id="changeColorBtn">Change Color</button>
+    </div>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+
+</body>
+</html>

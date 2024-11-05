@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ques_3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #animatedDiv {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(246, 3, 3);
+        margin: 20px auto;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+
+    <div id="animatedDiv">Animate Me</div>
+
+    <script>
+      $(document).ready(function () {
+        $("#startBtn").click(function () {
+          $("#animatedDiv").animate({ width: "400px" }, 2000);
+        });
+
+        $("#stopBtn").click(function () {
+          $("#animatedDiv").stop();
+        });
+      });
+    </script>
+  </body>
+</html>

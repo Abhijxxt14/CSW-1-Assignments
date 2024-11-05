@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques_6</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#highlightBtn').click(function() {
+                $('.contentDiv').removeClass(this).addClass('highlight');
+            });
+            $('#dimBtn').click(function() {
+                $('.contentDiv').removeClass('highlight').addClass('dim');
+            });
+        });
+    </script>
+    <style>
+        .dim {
+            opacity: 0.5; 
+        }
+        .contentDiv {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue; 
+            text-align: center;
+            line-height: 100px;
+            margin: 20px auto;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: yellow; 
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+    <button id="highlightBtn">Add Highlight</button>
+    <button id="dimBtn">Add Dim</button>
+
+    <div class="contentDiv">Toggle Me</div>
+
+</body>
+</html>

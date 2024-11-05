@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques4</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+<script>
+    $(document).ready(function () {
+        $("#sfetchtxt").click(function () {
+         alert("TEWXT CONTENT : " + $('#txtelement').text());
+        });
+
+        $("#sfetchhtml").click(function () {
+            alert("HTML CONTENT : " + $('#htmlelement').html());
+        });
+      })
+</script>
+</head>
+<p id="txtelement"> 
+   txt for the pareagrapoh
+</p>
+<div id="htmlelement">
+    <p>para inside div</p>
+    <strong> bold text</strong>
+</div>
+<button id="sfetchtxt"> fetch text</button>
+<button id="sfetchhtml"> fetch html</button>
+
+    
+</body>
+</html>

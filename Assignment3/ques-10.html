@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script>
+        $(document).ready(function() {
+            $("#Foremfield").submit(function(event){
+                var name = $("#name").val();
+                var mail = $("#mail").val();
+                if(name === "" && mail === ""){
+                    alert("Name and Mail shouldn't be empty");
+                    event.preventDefault();
+                }
+                else if(name === ""){
+                    alert("Name shouldn't be empty");
+                    event.preventDefault();
+                }
+                else if(mail === ""){
+                    alert("Email shouldn't be empty");
+                    event.preventDefault();
+                }
+                else {
+                    $("#Foremfield").after("<p> Success </p>");
+                }
+            });
+        });
+    </script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        p {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="Foremfield">
+        <label for="name">NAME</label>
+        <input type="text" id="name">
+        <label for="mail">EMAIL</label>
+        <input type="email" id="mail">
+        <input type="submit" value="Submit" id="submitbtn">
+    </form>
+   
+</body>
+</html>
