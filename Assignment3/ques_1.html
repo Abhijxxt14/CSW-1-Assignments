@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ques_1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#red-btn").click(function () {
+            $("body").css("background-color", "red");
+          });
+  
+          $("#blue-btn").click(function () {
+            $("body").css("background-color", "blue");
+          });
+  
+          $("#green-btn").click(function () {
+            $("body").css("background-color", "green");
+          });
+  
+          $("#tggle-btn").click(function () {
+            $(".box").toggle();
+          });
+        });
+      </script>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: white;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Change Bg Color</h2>
+    <button id="red-btn">Red</button>
+    <button id="blue-btn">Blue</button>
+    <button id="green-btn">Green</button>
+
+    <h2>Toggle Divs</h2>
+    <button id="tggle-btn">Toggle</button>
+ <div class="box"></div>
+
+  </body>
+</html>
