@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques_10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+
+        img {
+            width: 100px; 
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin: 0 5px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        h2 {
+            margin: 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./soalogo.jpg">
+        <h2>Registration</h2>
+        <form>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div>
+                <label for="gender-male">
+                    <input type="radio" id="gender-male" name="gender" value="male"> Male
+                </label>
+                <label for="gender-female">
+                    <input type="radio" id="gender-female" name="gender" value="female"> Female
+                </label>
+            </div>
+            <select name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="#">ct1</option>
+                <option value="#">ct2</option>
+                <option value="#">ct3</option>
+              
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
