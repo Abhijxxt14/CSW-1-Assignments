@@ -6,6 +6,6 @@ class Main {
         System.out.println(numInt);
         boolean newNum = false;
         Boolean lol = newNum;//autoboxing
-        System.out.println(newNum);
+        System.out.println(lol);
     }
 } 
