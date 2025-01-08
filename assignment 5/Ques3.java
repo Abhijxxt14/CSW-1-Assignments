@@ -7,6 +7,6 @@ class Main {
         System.out.println(numInt);
         double newNum = 96.34546;
         Double lol = newNum;//autoboxing
-        System.out.println(newNum);
+        System.out.println(lol);
     }
 } 
