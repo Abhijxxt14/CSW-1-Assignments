@@ -4,7 +4,7 @@ class Main {
         Integer numInt = new Integer (num);//constructor
         System.out.println(numInt);
         int newNum = 96;
-        Integer lol = newNum;//autoboxing
-        System.out.println(newNum);
+        Integer lol = new Integer (newNum);//autoboxing
+        System.out.println(lol);
     }
 } 
