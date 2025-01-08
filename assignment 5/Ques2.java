@@ -5,6 +5,6 @@ class Main {
         System.out.println(numInt);
         float newNum = 96f;
         Float lol = newNum;//autoboxing
-        System.out.println(newNum);
+        System.out.println(lol);
     }
 } 
